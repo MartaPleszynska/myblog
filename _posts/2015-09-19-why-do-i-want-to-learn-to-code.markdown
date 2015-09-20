@@ -1,13 +1,12 @@
 ---
 title:  "Why do I want to learn to code?"
 date:   2015-09-19 09:54:17
-
-image: watercolor.jpg
-
-
 ---
-post content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sapien pellentesque, euismod mi vel, luctus dolor. Vestibulum faucibus ut dui et finibus. Quisque vitae velit et nulla maximus dapibus gravida id sem. Vivamus ut consequat sem. Nam in efficitur justo. Cras sit amet tortor porttitor, varius tellus sit amet, facilisis dolor. Nam in imperdiet lectus. Nunc vel leo a ante elementum egestas. Suspendisse potenti. Praesent a ante dignissim, laoreet felis vel, blandit eros. Donec laoreet ligula sit amet nibh malesuada, at mattis tellus semper. Sed maximus non nisl ut hendrerit. Quisque sit amet efficitur nulla. Etiam facilisis sem libero, nec interdum neque sollicitudin eu. Quisque tincidunt magna nec vestibulum eleifend. Nam sit amet auctor felis.
 
-Donec varius nisl et enim eleifend, ultrices fringilla diam faucibus. Quisque at tortor eu tellus porta egestas. Integer nibh est, pulvinar non ullamcorper in, varius id dolor. Etiam libero magna, gravida sit amet aliquet ut, laoreet non enim. Integer eleifend est et rutrum rutrum. Aliquam erat volutpat. In eget sem sed justo dictum hendrerit. Donec nec venenatis velit, sed congue augue. Donec faucibus vestibulum magna a sodales. Maecenas non eros consectetur, gravida risus ac, dignissim felis. Sed sagittis luctus est in pellentesque. Suspendisse finibus lorem at tellus cursus feugiat.
+A few years ago someone said to me: "Choose the job you love and you will never have to work a day in your life." and I really liked the idea. What job would I love? At that time I had no clue and obviously my current job wasn't the dream job. So I  began my search.
 
-Aliquam quis placerat orci, at mattis nibh. Sed consectetur magna lectus, ac feugiat augue imperdiet nec. Pellentesque massa leo, tempus nec purus commodo, fermentum bibendum odio. Nulla facilisi. Sed eleifend eget lectus ac convallis. Pellentesque sodales dignissim blandit. Proin nisl purus, volutpat id ipsum quis, sollicitudin congue mi.
+I like photography so I signed up for university courses. Then I thought that it would nice if I could create my own website to showcase my photographs. This lead me sign up for [Open University] (http://www.open.ac.uk/) course and finally get my degree. One of the first modules I was studying was "Designing applications with Visual Basic" which made me realise that this is what I wanted to do.
+
+I always liked computing and enjoyed problem solving but I was not aware how much until I started discovering how a small application can be built and how its components work together. The most excitement I got was from fixing a code (which I inputted wrong in the first place) and getting the application working the way I want it to. Further I learned about creating forms using HTML, CSS and JavaScript and I had no more doubts, but I knew I had a long way to go to become a software developer.
+
+Luckily, I got into [Mayden Academy] (http://www.maydenacademy.co.uk/). Through intensive training programme, which is allowing me to gain valuable knowledge and work experience under the eye of professionals, I am hoping to become a software developer in just six months.
