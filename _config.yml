@@ -2,6 +2,7 @@
 title: Marta's blog.
 email:
 description: A blog about my journey to become a software developer.
+baseurl: '/myblog'
 url: "" # the base hostname & protocol for your site
 paginate: 3
 
