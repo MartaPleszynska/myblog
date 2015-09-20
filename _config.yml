@@ -1,0 +1,28 @@
+# Site settings
+title: Marta's blog.
+email:
+description: A blog about my journey to become a software developer.
+url: "" # the base hostname & protocol for your site
+paginate: 3
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+#Default Settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Marta Pleszynska
+      layout: "post"
+      category: academy
+
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "page"
