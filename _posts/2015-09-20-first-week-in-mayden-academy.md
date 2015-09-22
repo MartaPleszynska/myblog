@@ -16,6 +16,6 @@ We were working with the command line amd setting up our bash profile.
 
 We have learned about LAMP (Linux Apache MySQL PHP) and set it up on our machines.
 
-At least we learned how to use Jekyll to create a site for our blog.
+At last we learned how to use Jekyll to create a site for our blog.
 
 tbc
