@@ -5,13 +5,29 @@
     <description>A blog about my journey to become a software developer.</description>
     <link>/myblog/</link>
     <atom:link href="/myblog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Sep 2015 15:56:59 +0100</pubDate>
-    <lastBuildDate>Sun, 20 Sep 2015 15:56:59 +0100</lastBuildDate>
+    <pubDate>Tue, 22 Sep 2015 11:16:57 +0100</pubDate>
+    <lastBuildDate>Tue, 22 Sep 2015 11:16:57 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>First week in Mayden Academy</title>
-        <description>&lt;p&gt;About my first week in Mayden Academy…&lt;/p&gt;
+        <description>&lt;p&gt;The first week flew by. It was great to meet everyone and have a glimpse of how life in Mayden looks like.&lt;/p&gt;
+
+&lt;p&gt;Apart from the usual admin stuff, during these five days we have managed to learn about Scrum software development methodology where a team works as an unit to reach a common goal.&lt;/p&gt;
+
+&lt;p&gt;We have set up development environment by installing a bunch o softwares like Homebrew, phpStrom, NPM, SublimeText, Atom, Vim, Dash ( not sure if remembered them all).&lt;/p&gt;
+
+&lt;p&gt;We have done some fun tutorials on Vim and watched some videos about other text editors (Atom, SublimeText, phpStorm)&lt;/p&gt;
+
+&lt;p&gt;We have been introduced to GitHub which is web-based Git repository hosting service. Git is a version control systems which helps to manage changes in documents, programs, files etc.&lt;/p&gt;
+
+&lt;p&gt;We were working with the command line amd setting up our bash profile.&lt;/p&gt;
+
+&lt;p&gt;We have learned about LAMP (Linux Apache MySQL PHP) and set it up on our machines.&lt;/p&gt;
+
+&lt;p&gt;At least we learned how to use Jekyll to create a site for our blog.&lt;/p&gt;
+
+&lt;p&gt;tbc&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Sep 2015 10:54:17 +0100</pubDate>
         <link>/myblog/first-week-in-mayden-academy</link>
@@ -24,11 +40,13 @@
     
       <item>
         <title>Why do I want to learn to code?</title>
-        <description>&lt;p&gt;post content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sapien pellentesque, euismod mi vel, luctus dolor. Vestibulum faucibus ut dui et finibus. Quisque vitae velit et nulla maximus dapibus gravida id sem. Vivamus ut consequat sem. Nam in efficitur justo. Cras sit amet tortor porttitor, varius tellus sit amet, facilisis dolor. Nam in imperdiet lectus. Nunc vel leo a ante elementum egestas. Suspendisse potenti. Praesent a ante dignissim, laoreet felis vel, blandit eros. Donec laoreet ligula sit amet nibh malesuada, at mattis tellus semper. Sed maximus non nisl ut hendrerit. Quisque sit amet efficitur nulla. Etiam facilisis sem libero, nec interdum neque sollicitudin eu. Quisque tincidunt magna nec vestibulum eleifend. Nam sit amet auctor felis.&lt;/p&gt;
+        <description>&lt;p&gt;A few years ago someone said to me: “Choose the job you love and you will never have to work a day in your life.” and I really liked the idea. What job would I love? At that time I had no clue and obviously my current job wasn’t the dream job. So I  began my search.&lt;/p&gt;
 
-&lt;p&gt;Donec varius nisl et enim eleifend, ultrices fringilla diam faucibus. Quisque at tortor eu tellus porta egestas. Integer nibh est, pulvinar non ullamcorper in, varius id dolor. Etiam libero magna, gravida sit amet aliquet ut, laoreet non enim. Integer eleifend est et rutrum rutrum. Aliquam erat volutpat. In eget sem sed justo dictum hendrerit. Donec nec venenatis velit, sed congue augue. Donec faucibus vestibulum magna a sodales. Maecenas non eros consectetur, gravida risus ac, dignissim felis. Sed sagittis luctus est in pellentesque. Suspendisse finibus lorem at tellus cursus feugiat.&lt;/p&gt;
+&lt;p&gt;I like photography so I signed up for university courses. Then I thought that it would nice if I could create my own website to showcase my photographs. This lead me sign up for &lt;a href=&quot;http://www.open.ac.uk/&quot;&gt;Open University&lt;/a&gt; course and finally get my degree. One of the first modules I was studying was “Designing applications with Visual Basic” which made me realise that this is what I wanted to do.&lt;/p&gt;
 
-&lt;p&gt;Aliquam quis placerat orci, at mattis nibh. Sed consectetur magna lectus, ac feugiat augue imperdiet nec. Pellentesque massa leo, tempus nec purus commodo, fermentum bibendum odio. Nulla facilisi. Sed eleifend eget lectus ac convallis. Pellentesque sodales dignissim blandit. Proin nisl purus, volutpat id ipsum quis, sollicitudin congue mi.&lt;/p&gt;
+&lt;p&gt;I always liked computing and enjoyed problem solving but I was not aware how much until I started discovering how a small application can be built and how its components work together. The most excitement I got was from fixing a code (which I inputted wrong in the first place) and getting the application working the way I want it to. Further I learned about creating forms using HTML, CSS and JavaScript and I had no more doubts, but I knew I had a long way to go to become a software developer.&lt;/p&gt;
+
+&lt;p&gt;Luckily, I got into &lt;a href=&quot;http://www.maydenacademy.co.uk/&quot;&gt;Mayden Academy&lt;/a&gt;. Through intensive training programme, which is allowing me to gain valuable knowledge and work experience under the eye of professionals, I am hoping to become a software developer in just six months.&lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Sep 2015 10:54:17 +0100</pubDate>
         <link>/myblog/why-do-i-want-to-learn-to-code</link>
