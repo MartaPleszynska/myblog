@@ -1,7 +1,6 @@
 ---
 title:  "First week in Mayden Academy"
 date:   2015-09-20 09:54:17
-image: academy.jpg
 ---
 The first week flew by. It was great to meet everyone and have a glimpse of how life in Mayden looks like.
 
