@@ -15,11 +15,11 @@ Treehouse
 [jekyll tutorials](http://teamtreehouse.com/library/build-a-blog-with-jekyll-and-github-pages)
 
 Vim tutorials:
-1. [Vim Snake](http://www.vimsnake.com)
-2. [Vim tutorial](http://www.openvim.com)
-3. [Vim Adeventures](http://vim-adventures.com)
+1.[Vim Snake](http://www.vimsnake.com)
+2.[Vim tutorial](http://www.openvim.com)
+3.[Vim Adeventures](http://vim-adventures.com)
 
 Tutorials on Laracasts:
-1. [Dev Machine Setup: Part 1](https://laracasts.com/lessons/dev-machine-setup)
-2. [Dev Machine Setup: Part 2](https://laracasts.com/lessons/dev-machine-setup-phpstorm)
+1.[Dev Machine Setup: Part 1](https://laracasts.com/lessons/dev-machine-setup)
+2.[Dev Machine Setup: Part 2](https://laracasts.com/lessons/dev-machine-setup-phpstorm)
 3.[PHPStorm Test Workflow](https://laracasts.com/lessons/phpstorm-testing-workflow)
