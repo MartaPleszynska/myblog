@@ -12,7 +12,7 @@ We have set up development environment by installing a bunch of programs like [H
 [Atom](https://atom.io/) - another modern text editor;
 [sequelPro ](http://www.sequelpro.com/) - a fast, easy-to-use Mac database management application for working with MySQL databases.
 
-We have done some fun tutorials on Vim - another text editor (links available on [resources](/resources.md) page).
+We have done some fun tutorials on Vim - another text editor (links available on [resources](http://martapleszynska.github.io/resources.md) page).
 
 We have been introduced to [GitHub](https://github.com/) which is web-based Git repository hosting service. Git is a version control systems which helps to manage changes in documents, programs, files etc.
 
