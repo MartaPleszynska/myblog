@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Form validation - some code behind the Belbin Test website</title>
+  <meta name="description" content="I thought I will share some code which have been used for validation on registration page to create Belbin 1.0.">
+
+  <link rel="stylesheet" href="/myblog/css/main.css">
+  <link rel="canonical" href="/myblog/validation">
+  <link rel="alternate" type="application/rss+xml" title="Marta's blog." href="/myblog/feed.xml" />
+</head>
+
+
+  <body>
+	  <div class="wrapper">
+			<!-- Capture and store a URL -->
+
+
+<header class="main-header" role="banner">
+  <div class="grid">
+    <div class="grid__col--12">
+      <a class="site-logo" href="/myblog/" title="Home">
+        Marta's Blog
+      </a>
+      <nav class="navbar" role="navigation">
+        <ul class="nav">
+        
+        <!-- Compare the title page to URL -->
+        
+          
+          <li  class="nav__item" >
+            <a href="/myblog/about/">About</a>
+          </li>
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
+          
+          <li  class="nav__item" >
+            <a href="/myblog/resources/">Resources</a>
+          </li>
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
+          
+
+        
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+		  <div class="grid">
+	<div class="grid__col--12 post">
+    <header class="post__header">
+      <h1 class="post__title--grouped">Form validation - some code behind the Belbin Test website</h1>
+      <div class="post__meta">
+        <b class="post__author">Marta Pleszynska</b>
+        <b class="post__sep">&#x25cf;</b>
+        <b class="post__date">Sep 26, 2015</b>
+      </div>
+    </header>
+		
+    <article class="post__content">
+      <p>I thought I will share some code which have been used for validation on registration page to create Belbin 1.0.</p>
+
+<p>JavaScript can be used validate forms on client side, before the request is sent to the server. By using regular expressions, we can check value inputed in text boxes against the valid characters. Here are two simple funtions in JavaScript that will validate first and last name.</p>
+
+<p><code>javascript
+function validateFirstname() {
+  var firstname = document.getElementById('firstname').value;
+  // firstname should be letters only
+  var value = /^[a-zA-Z]+$/i;
+  //test regular expression against the value in the field
+  if (! value.test(firstname) )
+{
+  //field is cleared to encourage new correct entry
+  document.getElementById('firstname').value = "";
+  //meassage to be used in an alert box
+  result = "Please enter a valid name! (Letters only)."
+}
+else
+{
+  //result is an empty string if the entry is correct
+  result = "";
+}
+return result
+}
+</code></p>
+
+<p>And similar code to validate last name:
+<code>javascript
+function validateLastname()
+{
+var lastname = document.getElementById('lastname').value;
+// lastname should start and finish letters only
+var value = /^[a-zA-Z ,.'-]+$/i;
+//test regular expression against the value in the field
+if (! value.test(lastname) )
+{
+//field is cleared to encourage new correct entry
+document.getElementById('lastname').value = "";
+result ="Please enter a last name!";
+}
+else
+{
+  //result is an empty string if the entry is correct
+  result = "";
+}
+return result
+}
+</code>
+Both functions will validate input text from a text boxes and checked them against set of agreed characters. Values will be cleared if entered incorrectly and it will not allow to submit a form - which in this case, to register.</p>
+
+<p>Where JavaScript does not work correctly in a browser or it is switched off, validation is done using php and this is a server side validation.</p>
+
+<p><code>php
+&lt;?php
+function validate( $firstname, $lastname){
+  $msg = "";
+  $value1 = "/^[a-zA-Z]+$/i";
+  $value2 = "/^[a-zA-Z ,.'-]+$/i";
+  $check1 = preg_match($value1, $firstname);
+  $check2 = preg_match($value2, $lastname);
+  if ( $check1 == 0 ){
+  $msg .= "Please enter valid first name!";
+  }
+  if ($check2 == 0){
+  $msg .= "&lt;br/&gt;Please enter valid last name!";
+  }
+  return $msg;
+}
+?&gt;
+</code>
+This php function has the same purpose as javascript one.</p>
+
+<p>Validation of forms is important. By restricting input of characters and their length you can avoid incorrect entries being submitted to the database but also it can help defend against malicious attacks like SQL injections .</p>
+
+    </article>
+	</div>
+</div>
+
+			<div class="push"></div>
+		</div>
+		 
+		<footer class="panel--centered" role="contentinfo">
+  <div class="grid">
+    <div class="centered grid__col--6">
+    	<img class="img--avatar feat-img is-hidden-mobile" src="https://drive.google.com/thumbnail?id=0ByuWs-n5P7fTbnMxOEJSTkYzTlA0Mkl6TmU4eHVCblU0ZFow&authuser=0&v=1442747124655&sz=w2316-h1048">
+      <p>A blog about my journey to become a software developer. <br>
+
+      </p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+
+</html>

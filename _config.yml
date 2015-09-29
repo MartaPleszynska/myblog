@@ -3,7 +3,7 @@ title: Marta's blog.
 email:
 description: A blog about my journey to become a software developer.
 baseurl: '/myblog'
-url: "" # the base hostname & protocol for your site
+url: "http://martapleszynska.github.io/myblog/" # the base hostname & protocol for your site
 paginate: 3
 
 # Build settings

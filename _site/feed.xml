@@ -5,9 +5,125 @@
     <description>A blog about my journey to become a software developer.</description>
     <link>/myblog/</link>
     <atom:link href="/myblog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 26 Sep 2015 13:51:40 +0100</pubDate>
-    <lastBuildDate>Sat, 26 Sep 2015 13:51:40 +0100</lastBuildDate>
+    <pubDate>Tue, 29 Sep 2015 09:41:25 +0100</pubDate>
+    <lastBuildDate>Tue, 29 Sep 2015 09:41:25 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Form validation - some code behind the Belbin Test website</title>
+        <description>&lt;p&gt;I thought I will share some code which have been used for validation on registration page to create Belbin 1.0.&lt;/p&gt;
+
+&lt;p&gt;JavaScript can be used validate forms on client side, before the request is sent to the server. By using regular expressions, we can check value inputed in text boxes against the valid characters. Here are two simple funtions in JavaScript that will validate first and last name.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;javascript
+function validateFirstname() {
+  var firstname = document.getElementById(&#39;firstname&#39;).value;
+  // firstname should be letters only
+  var value = /^[a-zA-Z]+$/i;
+  //test regular expression against the value in the field
+  if (! value.test(firstname) )
+{
+  //field is cleared to encourage new correct entry
+  document.getElementById(&#39;firstname&#39;).value = &quot;&quot;;
+  //meassage to be used in an alert box
+  result = &quot;Please enter a valid name! (Letters only).&quot;
+}
+else
+{
+  //result is an empty string if the entry is correct
+  result = &quot;&quot;;
+}
+return result
+}
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And similar code to validate last name:
+&lt;code&gt;javascript
+function validateLastname()
+{
+var lastname = document.getElementById(&#39;lastname&#39;).value;
+// lastname should start and finish letters only
+var value = /^[a-zA-Z ,.&#39;-]+$/i;
+//test regular expression against the value in the field
+if (! value.test(lastname) )
+{
+//field is cleared to encourage new correct entry
+document.getElementById(&#39;lastname&#39;).value = &quot;&quot;;
+result =&quot;Please enter a last name!&quot;;
+}
+else
+{
+  //result is an empty string if the entry is correct
+  result = &quot;&quot;;
+}
+return result
+}
+&lt;/code&gt;
+Both functions will validate input text from a text boxes and checked them against set of agreed characters. Values will be cleared if entered incorrectly and it will not allow to submit a form - which in this case, to register.&lt;/p&gt;
+
+&lt;p&gt;Where JavaScript does not work correctly in a browser or it is switched off, validation is done using php and this is a server side validation.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;php
+&amp;lt;?php
+function validate( $firstname, $lastname){
+  $msg = &quot;&quot;;
+  $value1 = &quot;/^[a-zA-Z]+$/i&quot;;
+  $value2 = &quot;/^[a-zA-Z ,.&#39;-]+$/i&quot;;
+  $check1 = preg_match($value1, $firstname);
+  $check2 = preg_match($value2, $lastname);
+  if ( $check1 == 0 ){
+  $msg .= &quot;Please enter valid first name!&quot;;
+  }
+  if ($check2 == 0){
+  $msg .= &quot;&amp;lt;br/&amp;gt;Please enter valid last name!&quot;;
+  }
+  return $msg;
+}
+?&amp;gt;
+&lt;/code&gt;
+This php function has the same purpose as javascript one.&lt;/p&gt;
+
+&lt;p&gt;Validation of forms is important. By restricting input of characters and their length you can avoid incorrect entries being submitted to the database but also it can help defend against malicious attacks like SQL injections .&lt;/p&gt;
+</description>
+        <pubDate>Sat, 26 Sep 2015 22:00:17 +0100</pubDate>
+        <link>/myblog/validation</link>
+        <guid isPermaLink="true">/myblog/validation</guid>
+        
+        
+        <category>academy</category>
+        
+      </item>
+    
+      <item>
+        <title>Belbin project</title>
+        <description>&lt;p&gt;So a few days ago we have been left with an idea to create a site on which you could complete &lt;a href=&quot;http://www.belbin.com/&quot;&gt;Belbin&lt;/a&gt; personality test… Six trainees, with little or no development experience, building dynamic website that will include forms, store data and calculate results, what could be the outcome?&lt;/p&gt;
+
+&lt;p&gt;After three days working together coding, testing, fixing we managed to pull it off on “Belbin 1.0” was born.&lt;/p&gt;
+
+&lt;p&gt;Home php site with will allow you to register and and create an unique id number against which your answer will be register and stored.
+&lt;img src=&quot;/img/belbinHomePage.jpg&quot; alt=&quot;Belbin Test home page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We have added some validation that will disallow to leave empty spaces or usage of invalid characters like: ?%&amp;amp;! etc. After successful registration you will see an instruction page and you can click and start a test.
+&lt;img /&gt;
+There is one page per question. Each page has a form that consist of sentences and empty box to put value against it. There is validation on client and sever side to make sure that data entered is in correct format and saved successfully in database.
+&lt;img /&gt;
+After completing all section you can view your results.
+&lt;img /&gt;&lt;/p&gt;
+
+&lt;p&gt;I think we have done pretty well.&lt;/p&gt;
+
+&lt;p&gt;I was positively surprised how well we worked as team. Each of us worked on a piece of code building the website and help each other along. We had a common goal and we worked together to achieve it.&lt;/p&gt;
+
+&lt;p&gt;I a looking forward to more project and more team work.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Sep 2015 22:00:17 +0100</pubDate>
+        <link>/myblog/belbin-project</link>
+        <guid isPermaLink="true">/myblog/belbin-project</guid>
+        
+        
+        <category>academy</category>
+        
+      </item>
     
       <item>
         <title>First week in Mayden Academy</title>
