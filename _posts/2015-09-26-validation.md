@@ -14,6 +14,7 @@ Both functions will validate input text from a text boxes and checked them again
 If you try to register with empty fields you will get alert message:
 
 ![Alert message]({{ site.url }}/img/alertmsg.jpg)
+
 Which another JavaScript function is responsible for.
 
 ![Alert message]({{ site.url }}/img/validateOnSubmit.jpg)
@@ -21,6 +22,7 @@ Which another JavaScript function is responsible for.
 Where JavaScript does not work correctly in a browser or it is switched off, validation is done using php and this is a server side validation.
 
 ![PHP function]({{ site.url }}/img/phpfunction.jpg)
+
 This php function has the same purpose as javascript one.
 
 Validation of forms is important. By restricting input of characters and their length you can avoid incorrect entries being submitted to the database but also it can help defend against malicious attacks like SQL injections.
