@@ -33,11 +33,11 @@ Here a simplified code structure in css:
 This example will change background colour to blue for whole html body.
 Browser may have different default styles for html tags so if no style applied html page may look bit different depend on a browser.
 There are three ways on applying css to html:
-1. In line css - applied in inner tags: ```<tagname style="background-color: blue;"
-2. In head tag inside html <style></style>
-3. In separate css file
++ In line css - applied in inner tags: ```<tagname style="background-color: blue;"
++ In head tag inside html <style></style>
++ In separate css file
 
 To find out more about HTML and CSS visit following links:
-[w3 - html](http://www.w3.org/TR/html/)
-[w3schools](http://www.w3schools.com/)
-[HTML.net](http://html.net/)
+1. [w3 - html](http://www.w3.org/TR/html/)
+2. [w3schools](http://www.w3schools.com/)
+3. [HTML.net](http://html.net/)
