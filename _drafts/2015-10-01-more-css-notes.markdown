@@ -7,7 +7,7 @@ HTML tags with ```display:block;``` by default: ```div, header, footer, section,
 HTML tags with ```display:inline;``` by default: ```strong, span, input, label```
 + ```inline-block``` - treats block element like inline element
 
-Float property - puts an element in their own flow, it is used to create layout (like multiple columns); when applied parent tag/element will not see children elements with float property, to avoid that apply ```overflow:auto;``` to the parent; element with absolute position will ingnore float property (tbc).
+Float property - puts an element in their own flow, it is used to create layout (like multiple columns); when applied parent tag/element will not see children elements with float property, to avoid that apply ```overflow:auto;``` to the parent; element with absolute position will ignore float property (tbc).
 Values:left, right
 
 Position property - describes type of positioning method for an element.
@@ -30,9 +30,9 @@ I have created four ```<div>``` tags with different background colour to see wha
 ![display inline-block browser]({{ site.url }}/img/inline_blockbrowser.jpg)
 ![display inline-block html]({{ site.url }}/img/inline_blockhtml.jpg)![display inline-block css]({{ site.url }}/img/inline_blockcss.jpg)
 
-Note: little space appears between blocks
+Note: little space appears between blocks because it takes to account white spaces in html
 
-3.```inline``` - when applied ```inline`` to green and red divs (blue and yellow still set to inline-block) they do not see each other and also the blue div do not see them hence they sit on top of each other; (sibling do not see each other when inline applied).
+3.```inline``` - when applied ```inline``` to green and red divs (blue and yellow still set to inline-block) they sit on top of each other and also the blue div do not interact with them hence it also sit on top of them.
 
 ![display inline on red and green in browser]({{ site.url }}/img/inlinebrowser.jpg)
 ![display inline on red and green in css]({{ site.url }}/img/inlinecss.jpg)
@@ -44,7 +44,13 @@ You can fix it by applying float property:
 
 Note: no more gaps between red, green and blue divs.
 
-When applying position absolute red and green div will sit next to each other but on top of blue and yellow one:
+When applying position absolute red and green div will sit next to each other but on top of blue and yellow one as they are in separate document flow:
 
 ![display inline and absolute on red and green in browser]({{ site.url }}/img/inlineabsolutebrowser.jpg)
 ![display inline absolute on red and green in css]({{ site.url }}/img/inlineabsolutecss.jpg)
+
+Here is how different elements will look in a browser when various position values applied:
+
+![different position values in browser ]({{ site.url }}/img/positionbrowser.jpg)
+
+Black border is the body, dotted blue border represents first parent which is non static, dotted green border is static parent. Red div has position value static, blue div-relative, green div-fixed and  purple div-absolute.
