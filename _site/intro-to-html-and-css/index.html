@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Introduction to HTML and CSS</title>
+  <meta name="description" content="HTML stands for HyperText Markup Language and used to create web pages. A web browser reads HTML files and render them into visible or audible pages.A simple...">
+
+  <link rel="stylesheet" href="/myblog/css/main.css">
+  <link rel="canonical" href="http://martapleszynska.github.io/myblog//myblog/intro-to-html-and-css">
+  <link rel="alternate" type="application/rss+xml" title="Marta's blog." href="http://martapleszynska.github.io/myblog//myblog/feed.xml" />
+</head>
+
+
+  <body>
+	  <div class="wrapper">
+			<!-- Capture and store a URL -->
+
+
+<header class="main-header" role="banner">
+  <div class="grid">
+    <div class="grid__col--12">
+      <a class="site-logo" href="/myblog/" title="Home">
+        Marta's Blog
+      </a>
+      <nav class="navbar" role="navigation">
+        <ul class="nav">
+        
+        <!-- Compare the title page to URL -->
+        
+          
+          <li  class="nav__item" >
+            <a href="/myblog/about/">About</a>
+          </li>
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
+          
+          <li  class="nav__item" >
+            <a href="/myblog/resources/">Resources</a>
+          </li>
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
+          
+
+        
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+		  <div class="grid">
+	<div class="grid__col--12 post">
+    <header class="post__header">
+      <h1 class="post__title--grouped">Introduction to HTML and CSS</h1>
+      <div class="post__meta">
+        <b class="post__author">Marta Pleszynska</b>
+        <b class="post__sep">&#x25cf;</b>
+        <b class="post__date">Sep 29, 2015</b>
+      </div>
+    </header>
+		
+    <article class="post__content">
+      <p>HTML stands for HyperText Markup Language and used to create web pages. A web browser reads HTML files and render them into visible or audible pages.
+A simple HTML structure looks like this:
+<img src="http://martapleszynska.github.io/myblog//img/htmlCode.jpg" alt="HTML Code" />
+And in a browser
+<img src="http://martapleszynska.github.io/myblog//img/htmlBrowser.jpg" alt="HTML in Browser" /></p>
+
+<p>Every html page must start with <code>&lt;!DOCTYPE html&gt;</code>. It defines the version of the document and its type.
+<code>&lt;html&gt;</code> is the root of the document.
+<code>&lt;head&gt;</code> tag is used to contain metadata which are describes in tags like: <code>&lt;title&gt; &lt;style&gt; &lt;link&gt; &lt;meta&gt;</code>.
+Title is the title of the document.
+Style describes the styling.
+Link contains references to external files.
+Meta is used to describe the page, include keywords for search engines.
+<code>&lt;body&gt;</code> describes content visible in a browser.
+Headers are contain in <code>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; ...</code> tags; paragraphs in <code>&lt;p&gt;</code>; tables in <code>&lt;table&gt;</code> tag and so on
+The important thing is to remember to close the tag: <code>&lt;/html&gt; &lt;/body&gt; &lt;/h1&gt;</code> etc
+There are of course exceptions to the rule: <code>img, input, br, hr, meta</code> tags do not have closing tags.</p>
+
+<p>Tags have properties and attributes. Property in put inside a opening tag after its name and attributes in similar way however the value needs to be specified:</p>
+<tagname property="" attribute="value"></tagname>
+
+<p>CSS stands for Cascading Style Sheets and it a stysheet language that describes how HTML document should be presented. You can change font size, family or colour, background, apply border and many more.
+Here a simplified code structure in css:</p>
+
+<p><img src="http://martapleszynska.github.io/myblog//img/cssCode.jpg" alt="CSS code" /></p>
+
+<p>This example will change background colour to blue for whole html body.
+Browser may have different default styles for html tags so if no style applied html page may look bit different depend on a browser.
+There are three ways on applying css to html:</p>
+
+<ol>
+  <li>In line css - applied in inner tags: <code>&lt;tagname style="background-color: blue;"</code></li>
+  <li>In head tag inside html <style></style></li>
+  <li>In separate css file</li>
+</ol>
+
+<p>To find out more about HTML and CSS visit following links:
++ <a href="http://www.w3.org/TR/html/">w3 - html</a>
++ <a href="http://www.w3schools.com/">w3schools</a>
++ <a href="http://html.net/">HTML.net</a></p>
+
+    </article>
+	</div>
+</div>
+
+			<div class="push"></div>
+		</div>
+		 
+		<footer class="panel--centered" role="contentinfo">
+  <div class="grid">
+    <div class="centered grid__col--6">
+    	<img class="img--avatar feat-img is-hidden-mobile" src="https://drive.google.com/thumbnail?id=0ByuWs-n5P7fTbnMxOEJSTkYzTlA0Mkl6TmU4eHVCblU0ZFow&authuser=0&v=1442747124655&sz=w2316-h1048">
+      <p>A blog about my journey to become a software developer. <br>
+
+      </p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+
+</html>

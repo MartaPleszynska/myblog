@@ -10,8 +10,8 @@
   <meta name="description" content="I thought I will share some code which have been used for validation on registration page to create Belbin 1.0.">
 
   <link rel="stylesheet" href="/myblog/css/main.css">
-  <link rel="canonical" href="/myblog/validation">
-  <link rel="alternate" type="application/rss+xml" title="Marta's blog." href="/myblog/feed.xml" />
+  <link rel="canonical" href="http://martapleszynska.github.io/myblog//myblog/validation">
+  <link rel="alternate" type="application/rss+xml" title="Marta's blog." href="http://martapleszynska.github.io/myblog//myblog/feed.xml" />
 </head>
 
 
@@ -67,6 +67,11 @@
           
 
         
+        <!-- Compare the title page to URL -->
+        
+          
+
+        
         </ul>
       </nav>
     </div>
@@ -90,75 +95,28 @@
 
 <p>JavaScript can be used validate forms on client side, before the request is sent to the server. By using regular expressions, we can check value inputed in text boxes against the valid characters. Here are two simple funtions in JavaScript that will validate first and last name.</p>
 
-<p><code>javascript
-function validateFirstname() {
-  var firstname = document.getElementById('firstname').value;
-  // firstname should be letters only
-  var value = /^[a-zA-Z]+$/i;
-  //test regular expression against the value in the field
-  if (! value.test(firstname) )
-{
-  //field is cleared to encourage new correct entry
-  document.getElementById('firstname').value = "";
-  //meassage to be used in an alert box
-  result = "Please enter a valid name! (Letters only)."
-}
-else
-{
-  //result is an empty string if the entry is correct
-  result = "";
-}
-return result
-}
-</code></p>
+<p><img src="http://martapleszynska.github.io/myblog//img/validateFirstName.jpg" alt="First Name Validation" />
+<img src="http://martapleszynska.github.io/myblog//img/validateLastName.jpg" alt="Last Name Validation" /></p>
 
-<p>And similar code to validate last name:
-<code>javascript
-function validateLastname()
-{
-var lastname = document.getElementById('lastname').value;
-// lastname should start and finish letters only
-var value = /^[a-zA-Z ,.'-]+$/i;
-//test regular expression against the value in the field
-if (! value.test(lastname) )
-{
-//field is cleared to encourage new correct entry
-document.getElementById('lastname').value = "";
-result ="Please enter a last name!";
-}
-else
-{
-  //result is an empty string if the entry is correct
-  result = "";
-}
-return result
-}
-</code>
-Both functions will validate input text from a text boxes and checked them against set of agreed characters. Values will be cleared if entered incorrectly and it will not allow to submit a form - which in this case, to register.</p>
+<p>Both functions will validate input text from a text boxes and checked them against set of agreed characters. Values will be cleared if entered incorrectly and it will not allow to submit a form - which in this case, to register.</p>
+
+<p>If you try to register with empty fields you will get alert message:</p>
+
+<p><img src="http://martapleszynska.github.io/myblog//img/alertmsg.jpg" alt="Alert message" /></p>
+
+<p>Which another JavaScript function is responsible for.</p>
+
+<p><img src="http://martapleszynska.github.io/myblog//img/validateOnSubmit.jpg" alt="Alert message" /></p>
 
 <p>Where JavaScript does not work correctly in a browser or it is switched off, validation is done using php and this is a server side validation.</p>
 
-<p><code>php
-&lt;?php
-function validate( $firstname, $lastname){
-  $msg = "";
-  $value1 = "/^[a-zA-Z]+$/i";
-  $value2 = "/^[a-zA-Z ,.'-]+$/i";
-  $check1 = preg_match($value1, $firstname);
-  $check2 = preg_match($value2, $lastname);
-  if ( $check1 == 0 ){
-  $msg .= "Please enter valid first name!";
-  }
-  if ($check2 == 0){
-  $msg .= "&lt;br/&gt;Please enter valid last name!";
-  }
-  return $msg;
-}
-?&gt;
-</code>
-This php function has the same purpose as javascript one.</p>
+<p><img src="http://martapleszynska.github.io/myblog//img/phpfunction.jpg" alt="PHP function" /></p>
 
-<p>Validation of forms is important. By restricting input of characters and their length you can avoid incorrect entries being submitted to the database but also it can help defend against malicious attacks like SQL injections .</p>
+<p>This php function has the same purpose as javascript one.</p>
+
+<p>Validation of forms is important. By restricting input of characters and their length you can avoid incorrect entries being submitted to the database but also it can help defend against malicious attacks like SQL injections.</p>
+
+<p><a href="https://validator.w3.org/docs/why.html">Read more</a> about why validate websites.</p>
 
     </article>
 	</div>

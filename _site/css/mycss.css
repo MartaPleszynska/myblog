@@ -84,22 +84,3 @@ text-align: center;
   font-size: 24px;
 
 }
-.mybutton{
-
-}
-.myposts{
-  
-}
-.pagination {
-  display: inline-block;
-  padding: 0.3125em 0.625em;
-  border-radius: 0.4em;
-  background: #f8f8f9;
-  margin-bottom: 0.75em;
-  font-size: 0.9375em; }
-  .pagination__arrow-next {
-    margin-left: 0.25em; }
-  .pagination__arrow-prev {
-    margin-right: 0.25em; }
-  .pagination__page {
-    margin: 0 0.3125em; }

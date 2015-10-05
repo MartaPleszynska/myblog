@@ -3,11 +3,139 @@
   <channel>
     <title>Marta&#39;s blog.</title>
     <description>A blog about my journey to become a software developer.</description>
-    <link>/myblog/</link>
-    <atom:link href="/myblog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Sep 2015 09:41:25 +0100</pubDate>
-    <lastBuildDate>Tue, 29 Sep 2015 09:41:25 +0100</lastBuildDate>
+    <link>http://martapleszynska.github.io/myblog//myblog/</link>
+    <atom:link href="http://martapleszynska.github.io/myblog//myblog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 05 Oct 2015 15:09:32 +0100</pubDate>
+    <lastBuildDate>Mon, 05 Oct 2015 15:09:32 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>CSS selectors</title>
+        <description>
+</description>
+        <pubDate>Sat, 03 Oct 2015 22:00:00 +0100</pubDate>
+        <link>http://martapleszynska.github.io/myblog//myblog/css-selectors</link>
+        <guid isPermaLink="true">http://martapleszynska.github.io/myblog//myblog/css-selectors</guid>
+        
+        
+        <category>academy</category>
+        
+      </item>
+    
+      <item>
+        <title>More CSS notes - display, float and position properties</title>
+        <description>&lt;p&gt;Display property - describes the way an element is displayed in a browser, defines the style of a box the element it is using.&lt;/p&gt;
+
+&lt;p&gt;Values:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;block&lt;/code&gt; - takes up a full width of a body which means it will not allow another element sit next it even when it width is less than the &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; width; you can define padding, width, height, margin; height will expand depend on the content;
+HTML tags with &lt;code&gt;display:block;&lt;/code&gt; by default: &lt;code&gt;div, header, footer, section, main&lt;/code&gt; and &lt;code&gt;p&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;inline&lt;/code&gt; - does not fill whole width; cannot apply &lt;code&gt;width, height or margin&lt;/code&gt; unless applied float property;
+HTML tags with &lt;code&gt;display:inline;&lt;/code&gt; by default: &lt;code&gt;strong, span, input, label&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;inline-block&lt;/code&gt; - treats block element like inline element; note: little space appears between blocks because it takes to account white spaces in html.&lt;/p&gt;
+
+&lt;p&gt;Float property - puts an element in their own flow, it is used to create layout (like multiple columns); when applied parent tag/element will not see children elements with float property, to avoid that apply &lt;code&gt;overflow:auto;&lt;/code&gt; to the parent; element with absolute position will ignore float property (tbc).
+Values:left, right&lt;/p&gt;
+
+&lt;p&gt;Position property - describes type of positioning method for an element.&lt;/p&gt;
+
+&lt;p&gt;Values:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;static&lt;/code&gt; - default value.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;relative&lt;/code&gt; - creates new document flow inside original document flow; visually changes position but other elements think that previous position is still occupied and cannot see any child elements within element with position set to relative.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;fixed&lt;/code&gt; - relatively to viewport, lies on top of document flow, has no relationship with parent element.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;absolute&lt;/code&gt; - it is fixed to its first non static parent element, if none found will fix to the body.&lt;/p&gt;
+
+&lt;p&gt;Let see how it will look in a browser: black border is the body, dotted blue border represents first parent which is non static, dotted green border is static parent.&lt;/p&gt;
+
+&lt;p&gt;Display values:
+&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; is by default block so appears in browser like this:
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/block.png&quot; alt=&quot;display:block&quot; /&gt;
+When inline-block applied:
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/inline-block.png&quot; alt=&quot;display:inline-block&quot; /&gt;
+When inline  and float: left applied:
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/inline-float.png&quot; alt=&quot;display:inline and float:left&quot; /&gt;
+It is visible that parent2 does not see children divs.&lt;/p&gt;
+
+&lt;p&gt;Here is how it look the overflow: auto is applied and blue and purple divs are floated to the left:
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/overflow.png&quot; alt=&quot;overflow:auto&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Position values: Red div has position value static, blue div-relative, green div-fixed and  purple div-absolute; all with &lt;code&gt;top:15px; left:25px;&lt;/code&gt;
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/positionbrowser.jpg&quot; alt=&quot;different position values in browser &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Base html used:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/htmlcode.png&quot; alt=&quot;HTML code &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Base CSS used:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/csscode.png&quot; alt=&quot;CSS code&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 01 Oct 2015 22:00:17 +0100</pubDate>
+        <link>http://martapleszynska.github.io/myblog//myblog/more-css-notes</link>
+        <guid isPermaLink="true">http://martapleszynska.github.io/myblog//myblog/more-css-notes</guid>
+        
+        
+        <category>academy</category>
+        
+      </item>
+    
+      <item>
+        <title>Introduction to HTML and CSS</title>
+        <description>&lt;p&gt;HTML stands for HyperText Markup Language and used to create web pages. A web browser reads HTML files and render them into visible or audible pages.
+A simple HTML structure looks like this:
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/htmlCode.jpg&quot; alt=&quot;HTML Code&quot; /&gt;
+And in a browser
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/htmlBrowser.jpg&quot; alt=&quot;HTML in Browser&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Every html page must start with &lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt;. It defines the version of the document and its type.
+&lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; is the root of the document.
+&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; tag is used to contain metadata which are describes in tags like: &lt;code&gt;&amp;lt;title&amp;gt; &amp;lt;style&amp;gt; &amp;lt;link&amp;gt; &amp;lt;meta&amp;gt;&lt;/code&gt;.
+Title is the title of the document.
+Style describes the styling.
+Link contains references to external files.
+Meta is used to describe the page, include keywords for search engines.
+&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; describes content visible in a browser.
+Headers are contain in &lt;code&gt;&amp;lt;h1&amp;gt; &amp;lt;h2&amp;gt; &amp;lt;h3&amp;gt; ...&lt;/code&gt; tags; paragraphs in &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;; tables in &lt;code&gt;&amp;lt;table&amp;gt;&lt;/code&gt; tag and so on
+The important thing is to remember to close the tag: &lt;code&gt;&amp;lt;/html&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/h1&amp;gt;&lt;/code&gt; etc
+There are of course exceptions to the rule: &lt;code&gt;img, input, br, hr, meta&lt;/code&gt; tags do not have closing tags.&lt;/p&gt;
+
+&lt;p&gt;Tags have properties and attributes. Property in put inside a opening tag after its name and attributes in similar way however the value needs to be specified:&lt;/p&gt;
+&lt;tagname property=&quot;&quot; attribute=&quot;value&quot;&gt;&lt;/tagname&gt;
+
+&lt;p&gt;CSS stands for Cascading Style Sheets and it a stysheet language that describes how HTML document should be presented. You can change font size, family or colour, background, apply border and many more.
+Here a simplified code structure in css:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/cssCode.jpg&quot; alt=&quot;CSS code&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This example will change background colour to blue for whole html body.
+Browser may have different default styles for html tags so if no style applied html page may look bit different depend on a browser.
+There are three ways on applying css to html:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;In line css - applied in inner tags: &lt;code&gt;&amp;lt;tagname style=&quot;background-color: blue;&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;In head tag inside html &lt;style&gt;&lt;/style&gt;&lt;/li&gt;
+  &lt;li&gt;In separate css file&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To find out more about HTML and CSS visit following links:
++ &lt;a href=&quot;http://www.w3.org/TR/html/&quot;&gt;w3 - html&lt;/a&gt;
++ &lt;a href=&quot;http://www.w3schools.com/&quot;&gt;w3schools&lt;/a&gt;
++ &lt;a href=&quot;http://html.net/&quot;&gt;HTML.net&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 Sep 2015 22:00:17 +0100</pubDate>
+        <link>http://martapleszynska.github.io/myblog//myblog/intro-to-html-and-css</link>
+        <guid isPermaLink="true">http://martapleszynska.github.io/myblog//myblog/intro-to-html-and-css</guid>
+        
+        
+        <category>academy</category>
+        
+      </item>
     
       <item>
         <title>Form validation - some code behind the Belbin Test website</title>
@@ -15,79 +143,32 @@
 
 &lt;p&gt;JavaScript can be used validate forms on client side, before the request is sent to the server. By using regular expressions, we can check value inputed in text boxes against the valid characters. Here are two simple funtions in JavaScript that will validate first and last name.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;javascript
-function validateFirstname() {
-  var firstname = document.getElementById(&#39;firstname&#39;).value;
-  // firstname should be letters only
-  var value = /^[a-zA-Z]+$/i;
-  //test regular expression against the value in the field
-  if (! value.test(firstname) )
-{
-  //field is cleared to encourage new correct entry
-  document.getElementById(&#39;firstname&#39;).value = &quot;&quot;;
-  //meassage to be used in an alert box
-  result = &quot;Please enter a valid name! (Letters only).&quot;
-}
-else
-{
-  //result is an empty string if the entry is correct
-  result = &quot;&quot;;
-}
-return result
-}
-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/validateFirstName.jpg&quot; alt=&quot;First Name Validation&quot; /&gt;
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/validateLastName.jpg&quot; alt=&quot;Last Name Validation&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;And similar code to validate last name:
-&lt;code&gt;javascript
-function validateLastname()
-{
-var lastname = document.getElementById(&#39;lastname&#39;).value;
-// lastname should start and finish letters only
-var value = /^[a-zA-Z ,.&#39;-]+$/i;
-//test regular expression against the value in the field
-if (! value.test(lastname) )
-{
-//field is cleared to encourage new correct entry
-document.getElementById(&#39;lastname&#39;).value = &quot;&quot;;
-result =&quot;Please enter a last name!&quot;;
-}
-else
-{
-  //result is an empty string if the entry is correct
-  result = &quot;&quot;;
-}
-return result
-}
-&lt;/code&gt;
-Both functions will validate input text from a text boxes and checked them against set of agreed characters. Values will be cleared if entered incorrectly and it will not allow to submit a form - which in this case, to register.&lt;/p&gt;
+&lt;p&gt;Both functions will validate input text from a text boxes and checked them against set of agreed characters. Values will be cleared if entered incorrectly and it will not allow to submit a form - which in this case, to register.&lt;/p&gt;
+
+&lt;p&gt;If you try to register with empty fields you will get alert message:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/alertmsg.jpg&quot; alt=&quot;Alert message&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Which another JavaScript function is responsible for.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/validateOnSubmit.jpg&quot; alt=&quot;Alert message&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Where JavaScript does not work correctly in a browser or it is switched off, validation is done using php and this is a server side validation.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;php
-&amp;lt;?php
-function validate( $firstname, $lastname){
-  $msg = &quot;&quot;;
-  $value1 = &quot;/^[a-zA-Z]+$/i&quot;;
-  $value2 = &quot;/^[a-zA-Z ,.&#39;-]+$/i&quot;;
-  $check1 = preg_match($value1, $firstname);
-  $check2 = preg_match($value2, $lastname);
-  if ( $check1 == 0 ){
-  $msg .= &quot;Please enter valid first name!&quot;;
-  }
-  if ($check2 == 0){
-  $msg .= &quot;&amp;lt;br/&amp;gt;Please enter valid last name!&quot;;
-  }
-  return $msg;
-}
-?&amp;gt;
-&lt;/code&gt;
-This php function has the same purpose as javascript one.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/phpfunction.jpg&quot; alt=&quot;PHP function&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Validation of forms is important. By restricting input of characters and their length you can avoid incorrect entries being submitted to the database but also it can help defend against malicious attacks like SQL injections .&lt;/p&gt;
+&lt;p&gt;This php function has the same purpose as javascript one.&lt;/p&gt;
+
+&lt;p&gt;Validation of forms is important. By restricting input of characters and their length you can avoid incorrect entries being submitted to the database but also it can help defend against malicious attacks like SQL injections.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://validator.w3.org/docs/why.html&quot;&gt;Read more&lt;/a&gt; about why validate websites.&lt;/p&gt;
 </description>
         <pubDate>Sat, 26 Sep 2015 22:00:17 +0100</pubDate>
-        <link>/myblog/validation</link>
-        <guid isPermaLink="true">/myblog/validation</guid>
+        <link>http://martapleszynska.github.io/myblog//myblog/validation</link>
+        <guid isPermaLink="true">http://martapleszynska.github.io/myblog//myblog/validation</guid>
         
         
         <category>academy</category>
@@ -101,14 +182,16 @@ This php function has the same purpose as javascript one.&lt;/p&gt;
 &lt;p&gt;After three days working together coding, testing, fixing we managed to pull it off on “Belbin 1.0” was born.&lt;/p&gt;
 
 &lt;p&gt;Home php site with will allow you to register and and create an unique id number against which your answer will be register and stored.
-&lt;img src=&quot;/img/belbinHomePage.jpg&quot; alt=&quot;Belbin Test home page&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/belbinHomePage.jpg&quot; alt=&quot;Belbin Test home page&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;We have added some validation that will disallow to leave empty spaces or usage of invalid characters like: ?%&amp;amp;! etc. After successful registration you will see an instruction page and you can click and start a test.
-&lt;img /&gt;
-There is one page per question. Each page has a form that consist of sentences and empty box to put value against it. There is validation on client and sever side to make sure that data entered is in correct format and saved successfully in database.
-&lt;img /&gt;
-After completing all section you can view your results.
-&lt;img /&gt;&lt;/p&gt;
+&lt;p&gt;We have added some validation that will disallow to leave empty spaces or usage of invalid characters like: ?%&amp;amp;! etc. After successful registration you will see an instruction page and you can click and start a test.&lt;/p&gt;
+
+&lt;p&gt;There is one page per question. Each page has a form that consist of sentences and empty box to put value against it. There is validation on client and sever side to make sure that data entered is in correct format and saved successfully in database.
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/questionPage.jpg&quot; alt=&quot;Belbin Test question page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After completing all section you can view your results that includes the breakdown by team roles and some fancy graphs.
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/resultsPage1.jpg&quot; alt=&quot;Belbin Test question page&quot; /&gt;
+&lt;img src=&quot;http://martapleszynska.github.io/myblog//img/resultsPage2.jpg&quot; alt=&quot;Belbin Test question page&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I think we have done pretty well.&lt;/p&gt;
 
@@ -117,8 +200,8 @@ After completing all section you can view your results.
 &lt;p&gt;I a looking forward to more project and more team work.&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 Sep 2015 22:00:17 +0100</pubDate>
-        <link>/myblog/belbin-project</link>
-        <guid isPermaLink="true">/myblog/belbin-project</guid>
+        <link>http://martapleszynska.github.io/myblog//myblog/belbin-project</link>
+        <guid isPermaLink="true">http://martapleszynska.github.io/myblog//myblog/belbin-project</guid>
         
         
         <category>academy</category>
@@ -150,8 +233,8 @@ After completing all section you can view your results.
 &lt;p&gt;Maybe it sounds a lot and I have probably forgotten mention some of the things we have done but is was exciting and I am looking forward to next week.&lt;/p&gt;
 </description>
         <pubDate>Sun, 20 Sep 2015 10:54:17 +0100</pubDate>
-        <link>/myblog/first-week-in-mayden-academy</link>
-        <guid isPermaLink="true">/myblog/first-week-in-mayden-academy</guid>
+        <link>http://martapleszynska.github.io/myblog//myblog/first-week-in-mayden-academy</link>
+        <guid isPermaLink="true">http://martapleszynska.github.io/myblog//myblog/first-week-in-mayden-academy</guid>
         
         
         <category>academy</category>
@@ -169,8 +252,8 @@ After completing all section you can view your results.
 &lt;p&gt;I was fortunate enough to be accepted into &lt;a href=&quot;http://www.maydenacademy.co.uk/&quot;&gt;Mayden Academy&lt;/a&gt;. Through an intensive training programme, which is allowing me to gain valuable knowledge and work experience under the eye of professionals, I am hoping to become a software developer in just six months.&lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Sep 2015 10:54:17 +0100</pubDate>
-        <link>/myblog/why-do-i-want-to-learn-to-code</link>
-        <guid isPermaLink="true">/myblog/why-do-i-want-to-learn-to-code</guid>
+        <link>http://martapleszynska.github.io/myblog//myblog/why-do-i-want-to-learn-to-code</link>
+        <guid isPermaLink="true">http://martapleszynska.github.io/myblog//myblog/why-do-i-want-to-learn-to-code</guid>
         
         
         <category>academy</category>
