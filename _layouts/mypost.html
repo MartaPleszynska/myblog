@@ -1,0 +1,18 @@
+---
+layout: mydefault
+---
+<main class="mycontent">
+	<div class="mypostheader">
+		<h1 class="myposttitle">{{ page.title }}</h1>
+		<div class="mypostinfo">
+			<p class="mypostauthor">{% if page.author %}{{ page.author }}{% endif %}</b>
+			<p class="mypostdate">{{ page.date | date: "%b %-d, %Y" }}</b>
+		</div>
+	</div>
+	{% if page.image %}
+	<img class="feat-img is-hidden-mobile" src="/img/{{ page.image }}">
+	{% endif %}
+	<article class="mypostcontent">
+			{{ content }}
+	</article>
+</main>

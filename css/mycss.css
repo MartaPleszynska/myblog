@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+  overflow: auto;
+}
+.myheader{
+  width: 100%;
+  background-color: #194775;
+}
+.mytitle{
+    background-color: #AAE2FF;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+.mynavbar{
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+}
+.mymenu{
+  display: inline-block;
+margin-top: 10px;
+margin: auto;
+width: 100%;
+text-align: center;
+}
+.mymenuitem{
+  display: inline-block;
+  width: 24%;
+  padding-top: 15px;
+}
+.mymenuitem a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.mymenuitem a:hover{
+  color: #AAE2FF;
+  text-decoration: underline;
+}
+.mycurrentmenuitem{}
+.mycontent{
+  padding: 45px 60px 45px 60px;
+}
+.myfooter{
+  width: 100%;
+  background-color: #194775;
+  color: #FFFFFF;
+  height: 50px;
+  padding-top: 15px;
+  padding-right: 15px;
+  text-align: right;
+    font-size: 20px;
+}
+.mypostheader {
+  margin: 10px 0 10px 0;
+}
+.myposttitle{
+  color: #194775;
+  font-size: 50px;
+}
+.mypostinfo{
+  font-size: 20px;
+  color: #308330;
+}
+.mypostauthor{
+  display: inline-block;
+}
+.mypostdate{
+  display: inline-block;
+    margin-left: 15px;
+}
+.mypostdate::before{
+  content: " | "
+}
+.mypostcontent p{
+  margin-bottom: 10px;
+  color: #194775;
+  font-size: 24px;
+
+}

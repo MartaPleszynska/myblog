@@ -1,5 +1,5 @@
 ---
-title:  "More CSS notes"
+title:  "More CSS notes - display, float and position properties"
 date:   2015-10-01 21:00:17
 ---
 Display property - describes the way an element is displayed in a browser, defines the style of a box the element it is using.
