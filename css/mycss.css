@@ -85,10 +85,22 @@ text-align: center;
 
 }
 .mybutton{
-
+display: block;
+width: 60px;
+height: 35px;
+font-size: 16px;
+color: #FFFFFF;
+background-color: #308330;
 }
 .myposts{
-  
+
+}
+.mypostitem{
+  border-bottom: 1px dotted #999da1;
+  margin-bottom: 2.5em;
+  padding-bottom: 2em; }
+  .postitem:last-child {
+    border: none; }
 }
 .pagination {
   display: inline-block;

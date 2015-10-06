@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>CSS selectors</title>
-  <meta name="description" content="">
+  <meta name="description" content="Here are some noted selector we have talked about:">
 
   <link rel="stylesheet" href="/myblog/css/main.css">
   <link rel="canonical" href="http://martapleszynska.github.io/myblog//myblog/css-selectors">
@@ -35,6 +35,11 @@
           <li  class="nav__item" >
             <a href="/myblog/about/">About</a>
           </li>
+          
+
+        
+        <!-- Compare the title page to URL -->
+        
           
 
         
@@ -91,7 +96,66 @@
     </header>
 		
     <article class="post__content">
-      
+      <p>Here are some noted selector we have talked about:</p>
+
+<p>For element(s) with specified class:
+.classname{}</p>
+
+<p>For element(s) with specified id:
+#idname {}</p>
+
+<p>For all elements:
+* {}</p>
+
+<p>The same style for different elements:
+selector1, selector2 {attribute:value;}</p>
+
+<p>Example: p, a {text-decoration:underline;} - will apply underline to all p and a elements.</p>
+
+<p>For all elements(2) inside another element(1):
+selector1 selector2 {attribute:value;}</p>
+
+<p>For all elements (2) that is a direct children of its parent element(1):
+selector1 &gt; selector2 {attribute:value;}</p>
+
+<p>For every element(2) that has a direct parent element(1):
+selector1 ~ selector2 {attribute:value;}</p>
+
+<p>Selector with specific attribute:
+selector[attribute]{attribute:value;}
+selector[attribute=value]{attribute:value;}
+Example: input[type=radio]{}</p>
+
+<p>Specific selector inside another selector:
+selector1 selector2+selector2+selector2 {attribute:value;}
+(third selector2 inside selector1 - must be directly after…)</p>
+
+<p>selector:hover{} - for the elements on mouse over
+selector:active{} - for an active link
+selector:focus{} - for the element which has focus
+selector:selected{} - (for radio buttons, dropdown)
+selector:checked{} - (for check boxes)
+selector:visited{} - for all visited links
+selector:required{} - for input elements with the “required” attribute specified
+selector:empty{} - for every element that has no children
+selector:nth-child(n){} - for every element that is the n-th child of its parent</p>
+
+<p>selector:nth-of-type(n){} - for every selected element that is the n-th element of its parent of the same type
+  Example: p:nth-of-type(4) -	selects every &lt;p&gt; element that is the fourth &lt;p&gt; element of its parent</p>
+
+<p>selector:first-child{} - for the first child of the selected element
+selector:last-child{} - for the last child of the selected element (not widely supported yet)</p>
+
+<p>selector::before{} - inserts something directly before the content of selected element but after the previous one.
+selector::after{} - inserts something directly after the content of selected element but before the next one.
+Example:
+ li::before{content:”&gt;”}
+inserts ‘&gt;’ before each list element</p>
+
+<p>For more about selectors and more example checkout following links:
++ <a href="http://www.w3schools.com/cssref/css_selectors.asp">w3schools-selector reference</a>
++ <a href="http://www.w3schools.com/cssref/trysel.asp">w3schools-try it</a>
++ <a href="http://www.w3.org/TR/css3-selectors/">w3-css3 selectors</a></p>
 
     </article>
 	</div>

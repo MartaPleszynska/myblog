@@ -5,13 +5,97 @@
     <description>A blog about my journey to become a software developer.</description>
     <link>http://martapleszynska.github.io/myblog//myblog/</link>
     <atom:link href="http://martapleszynska.github.io/myblog//myblog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 05 Oct 2015 15:09:32 +0100</pubDate>
-    <lastBuildDate>Mon, 05 Oct 2015 15:09:32 +0100</lastBuildDate>
+    <pubDate>Tue, 06 Oct 2015 08:28:09 +0100</pubDate>
+    <lastBuildDate>Tue, 06 Oct 2015 08:28:09 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
+        <title>UI and UX, Responsive and Adaptive Designs</title>
+        <description>&lt;p&gt;How does it make you feel
+predicting user’s intentions
+Mobile first vs desktop first
+viewport
+media queries - allows read the basic information from browser or browser’s device
+Example(for devices with a screen)
+@media screen{
+    and (min-device-width) 1200px;
+    and (max-devive-width) 1600px;
+    and (-webkit-min-device-pixel-ratio:1){
+      selector {attribute:value;}
+    }
+}&lt;/p&gt;
+</description>
+        <pubDate>Tue, 06 Oct 2015 22:00:00 +0100</pubDate>
+        <link>http://martapleszynska.github.io/myblog//myblog/ui-ux</link>
+        <guid isPermaLink="true">http://martapleszynska.github.io/myblog//myblog/ui-ux</guid>
+        
+        
+        <category>academy</category>
+        
+      </item>
+    
+      <item>
         <title>CSS selectors</title>
-        <description>
+        <description>&lt;p&gt;Here are some noted selector we have talked about:&lt;/p&gt;
+
+&lt;p&gt;For element(s) with specified class:
+.classname{}&lt;/p&gt;
+
+&lt;p&gt;For element(s) with specified id:
+#idname {}&lt;/p&gt;
+
+&lt;p&gt;For all elements:
+* {}&lt;/p&gt;
+
+&lt;p&gt;The same style for different elements:
+selector1, selector2 {attribute:value;}&lt;/p&gt;
+
+&lt;p&gt;Example: p, a {text-decoration:underline;} - will apply underline to all p and a elements.&lt;/p&gt;
+
+&lt;p&gt;For all elements(2) inside another element(1):
+selector1 selector2 {attribute:value;}&lt;/p&gt;
+
+&lt;p&gt;For all elements (2) that is a direct children of its parent element(1):
+selector1 &amp;gt; selector2 {attribute:value;}&lt;/p&gt;
+
+&lt;p&gt;For every element(2) that has a direct parent element(1):
+selector1 ~ selector2 {attribute:value;}&lt;/p&gt;
+
+&lt;p&gt;Selector with specific attribute:
+selector[attribute]{attribute:value;}
+selector[attribute=value]{attribute:value;}
+Example: input[type=radio]{}&lt;/p&gt;
+
+&lt;p&gt;Specific selector inside another selector:
+selector1 selector2+selector2+selector2 {attribute:value;}
+(third selector2 inside selector1 - must be directly after…)&lt;/p&gt;
+
+&lt;p&gt;selector:hover{} - for the elements on mouse over
+selector:active{} - for an active link
+selector:focus{} - for the element which has focus
+selector:selected{} - (for radio buttons, dropdown)
+selector:checked{} - (for check boxes)
+selector:visited{} - for all visited links
+selector:required{} - for input elements with the “required” attribute specified
+selector:empty{} - for every element that has no children
+selector:nth-child(n){} - for every element that is the n-th child of its parent&lt;/p&gt;
+
+&lt;p&gt;selector:nth-of-type(n){} - for every selected element that is the n-th element of its parent of the same type
+  Example: p:nth-of-type(4) -	selects every &amp;lt;p&amp;gt; element that is the fourth &amp;lt;p&amp;gt; element of its parent&lt;/p&gt;
+
+&lt;p&gt;selector:first-child{} - for the first child of the selected element
+selector:last-child{} - for the last child of the selected element (not widely supported yet)&lt;/p&gt;
+
+&lt;p&gt;selector::before{} - inserts something directly before the content of selected element but after the previous one.
+selector::after{} - inserts something directly after the content of selected element but before the next one.
+Example:
+ li::before{content:”&amp;gt;”}
+inserts ‘&amp;gt;’ before each list element&lt;/p&gt;
+
+&lt;p&gt;For more about selectors and more example checkout following links:
++ &lt;a href=&quot;http://www.w3schools.com/cssref/css_selectors.asp&quot;&gt;w3schools-selector reference&lt;/a&gt;
++ &lt;a href=&quot;http://www.w3schools.com/cssref/trysel.asp&quot;&gt;w3schools-try it&lt;/a&gt;
++ &lt;a href=&quot;http://www.w3.org/TR/css3-selectors/&quot;&gt;w3-css3 selectors&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 03 Oct 2015 22:00:00 +0100</pubDate>
         <link>http://martapleszynska.github.io/myblog//myblog/css-selectors</link>
